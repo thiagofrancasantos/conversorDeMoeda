@@ -1,0 +1,118 @@
+/* Estilo para o botão circular */
+.btn-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #343a40;
+  background: #343a40;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+
+  &:hover {
+    background: #495057;
+    border-color: #495057;
+    transform: scale(1.1);
+  }
+}
+
+/* Botão flutuante no topo */
+.toggle-floating {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #343a40;
+  background: #343a40;
+  color: white;
+  z-index: 1000;
+  top: 15px;
+  left: 178px; /* Ajustado para sidebar de 180px */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.8rem;
+
+  &:hover {
+    background: #495057;
+    border-color: #495057;
+    transform: scale(1.1);
+  }
+}
+
+/* Posição quando colapsado */
+.toggle-collapsed {
+  left: 48px !important; /* Ajustado para sidebar colapsado de 50px */
+}
+
+/* Estilo para os itens do menu com hover */
+.hover-item {
+  transition: all 0.2s ease;
+  margin-bottom: 1px;
+  padding: 0.4rem 0.5rem !important;
+
+  &:hover {
+    background-color: #495057 !important;
+    transform: translateX(2px);
+  }
+}
+
+/* Transição suave para o sidebar */
+.sidebar-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 180px; /* Sidebar mais fino */
+}
+
+/* Sidebar colapsável - ainda mais fino */
+.sidebar-collapsed {
+  width: 50px !important; /* Colapsado mais fino */
+
+  .nav-link {
+    justify-content: center;
+    padding: 0.4rem 0.3rem !important;
+
+    i {
+      margin: 0 !important;
+      font-size: 1rem; /* Ícones menores */
+    }
+  }
+}
+
+/* Texto menor no sidebar */
+.sidebar-transition h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebar-transition .nav-link span {
+  font-size: 0.9rem;
+}
+
+/* Centralizar conteúdo do sidebar quando colapsado */
+.sidebar-collapsed .nav-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Ajuste do cabeçalho quando colapsado */
+.sidebar-collapsed .d-flex.justify-content-center {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+/* Conteúdo principal */
+.content-area {
+  transition: all 0.3s ease;
+}
+
+/* Garantir que os ícones fiquem centralizados */
+.nav-link i {
+  min-width: 18px;
+  text-align: center;
+  font-size: 1rem;
+}
